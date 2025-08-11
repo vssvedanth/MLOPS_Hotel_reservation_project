@@ -19,7 +19,7 @@ COPY . .
 
 # Install the package in editable mode
 RUN pip install --no-cache-dir -e .
-ENV PYTHONPATH="${PYTHONPATH}:/app/src"
+
 # Train the model before running the application
 RUN python pipeline/training_pipeline.py
 
