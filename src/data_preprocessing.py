@@ -29,7 +29,7 @@ class DataProcessor:
             logger.info("Starting our Data Processing step")
 
             logger.info("Dropping the columns")
-            df.drop(columns=['Booking_ID'], inplace=True)
+            df.drop(columns=['Booking_ID'] , inplace=True)
             df.drop_duplicates(inplace=True)
 
             cat_cols = self.config["data_processing"]["categorical_columns"]

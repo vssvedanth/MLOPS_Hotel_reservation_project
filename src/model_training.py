@@ -23,8 +23,8 @@ class ModelTraining:
         self.test_path = test_path
         self.model_output_path = model_output_path
 
-        self.params_dist = LIGHTGBM_PARAMS
-        self.random_search_params = RANDOM_SEEARCH_PARAMS
+        self.params_dist = LIGHTGM_PARAMS
+        self.random_search_params = RANDOM_SEARCH_PARAMS
 
     def load_and_split_data(self):
         try:
